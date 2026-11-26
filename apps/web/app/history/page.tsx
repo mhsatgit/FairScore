@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 import { 
   Clock, 
   AlertTriangle,
@@ -174,12 +175,12 @@ export default function HistoryPage() {
           <p className="mt-2 text-slate-600">
             Make a prediction to see it appear here
           </p>
-          <a
+          <Link
             href="/predict"
             className="mt-4 inline-flex items-center gap-2 btn-primary"
           >
             Make a Prediction
-          </a>
+          </Link>
         </div>
       ) : (
         <div className="card history-table">

@@ -1,0 +1,31 @@
+node_modules/
+
+# Next.js and TypeScript build output
+.next/
+out/
+*.tsbuildinfo
+
+# Python dependencies and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environment variables (keep example files)
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Logs and test output
+*.log
+coverage/
+.coverage
+htmlcov/
+
+# OS files
+.DS_Store
+Thumbs.db

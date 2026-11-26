@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 import { 
   Database, 
   Cpu, 
@@ -166,8 +167,8 @@ export default function Dashboard() {
             Monitor predictive quality, fairness signals, and dataset health from one calm, transparent workspace.
           </p>
           <div className="hero-actions">
-            <a href="/predict" className="hero-link">Analyze credit risk <ArrowUpRight className="h-4 w-4" /></a>
-            <a href="/fairness" className="hero-link">Review fairness <ArrowUpRight className="h-4 w-4" /></a>
+            <Link href="/predict" className="hero-link">Analyze credit risk <ArrowUpRight className="h-4 w-4" /></Link>
+            <Link href="/fairness" className="hero-link">Review fairness <ArrowUpRight className="h-4 w-4" /></Link>
           </div>
         </div>
       </section>
@@ -398,7 +399,7 @@ export default function Dashboard() {
       <div className="card">
         <h2 className="section-title">Quick Actions</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <a
+          <Link
             href="/predict"
             className="flex items-center gap-3 p-4 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors"
           >
@@ -409,9 +410,9 @@ export default function Dashboard() {
               <p className="font-medium text-slate-900">New Prediction</p>
               <p className="text-sm text-slate-600">Analyze credit risk</p>
             </div>
-          </a>
+          </Link>
           
-          <a
+          <Link
             href="/fairness"
             className="flex items-center gap-3 p-4 bg-accent-50 rounded-lg hover:bg-accent-100 transition-colors"
           >
@@ -422,9 +423,9 @@ export default function Dashboard() {
               <p className="font-medium text-slate-900">Fairness Audit</p>
               <p className="text-sm text-slate-600">Check model bias</p>
             </div>
-          </a>
+          </Link>
           
-          <a
+          <Link
             href="/model"
             className="flex items-center gap-3 p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors"
           >
@@ -435,7 +436,7 @@ export default function Dashboard() {
               <p className="font-medium text-slate-900">Model Details</p>
               <p className="text-sm text-slate-600">View performance</p>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
