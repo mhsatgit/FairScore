@@ -10,7 +10,8 @@
 
 **FairScore** is an open-source, end-to-end **Explainable and Bias-Aware Credit Scoring System**. Built as a Turborepo full-stack monorepo with a **FastAPI + scikit-learn/Fairlearn** backend and a **Next.js 14 + Tailwind CSS + Recharts** web application, FairScore demonstrates how credit risk assessment models can be simultaneously **accurate**, **transparent**, and **audited for demographic fairness**.
 
-**Live Webpage:** https://mhsatgit.github.io/FairScore/
+**Live Webpage:** https://mhsatgit.github.io/FairScore/          
+(Wait for backend,First request after some inactivity may take a minute to wake up)
 
 > **Educational & Research Prototype Disclaimer:** FairScore is an educational and research prototype evaluated on the public [UCI Statlog German Credit Data](https://archive.ics.uci.edu/dataset/144/statlog+german+credit+data) dataset. It is not a production lending system and must not be used as the basis for real-world financial or credit decisions.
 
